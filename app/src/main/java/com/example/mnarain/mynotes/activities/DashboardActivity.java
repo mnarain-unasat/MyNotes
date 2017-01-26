@@ -1,8 +1,8 @@
 package com.example.mnarain.mynotes.activities;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
@@ -32,7 +32,7 @@ public class DashboardActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        startActivity(getSelectedItemIntent(this, item.getItemId()));//
+        startActivity(getSelectedItemIntent(this, item.getItemId()));
         return true;
     }
 
