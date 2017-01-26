@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">My Notes</string>
+    <string name="contact_us">Contact us</string>
+    <string name="logout_user">Logout user</string>
+    <string name="about_us">About us</string>
 </resources>

@@ -1,4 +1,4 @@
-package com.example.mnarain.mynotes;
+package com.example.mnarain.mynotes.activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.example.mnarain.mynotes.R;
 
 public class LoginActivity extends AppCompatActivity {
 
