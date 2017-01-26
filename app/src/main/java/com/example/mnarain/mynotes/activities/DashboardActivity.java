@@ -32,7 +32,7 @@ public class DashboardActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        startActivity(getSelectedItemIntent(this, item.getItemId()));
+        startActivity(getSelectedItemIntent(this, item.getItemId()));//
         return true;
     }
 
