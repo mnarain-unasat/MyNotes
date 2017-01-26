@@ -1,5 +1,6 @@
 package com.example.mnarain.mynotes.util;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 
@@ -15,17 +16,17 @@ import com.example.mnarain.mynotes.activities.LoginActivity;
 
 public class MenuUtil{
 
-    public static Intent getSelectedItemIntent(int itemId) {
+    public static Intent getSelectedItemIntent(Context context, int itemId) {
         Intent intent = null;
         switch (itemId) {
             case R.id.aboutUs:
-                intent = new Intent(null, AboutUsActivity.class);
+                intent = new Intent(context, AboutUsActivity.class);
                 break;
             case R.id.contactUs:
-                intent = new Intent(null, ContactUsActivity.class);
+                intent = new Intent(context, ContactUsActivity.class);
                 break;
             case R.id.logoutUser:
-                intent = new Intent(null, LoginActivity.class);
+                intent = new Intent(context, LoginActivity.class);
                 break;
         }
         return  intent;

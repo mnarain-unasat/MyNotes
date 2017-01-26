@@ -8,6 +8,8 @@ import android.view.MenuItem;
 
 import com.example.mnarain.mynotes.R;
 
+import static com.example.mnarain.mynotes.util.MenuUtil.getSelectedItemIntent;
+
 public class AboutUsActivity extends AppCompatActivity {
 
     @Override
@@ -25,25 +27,7 @@ public class AboutUsActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        Intent intent = null;
-        //noinspection SimplifiableIfStatement
-
-        switch (item.getItemId()) {
-            case R.id.aboutUs:
-                intent = new Intent(this, AboutUsActivity.class);
-                break;
-            case R.id.contactUs:
-                intent = new Intent(this, ContactUsActivity.class);
-                break;
-            case R.id.logoutUser:
-                intent = new Intent(this, LoginActivity.class);
-                break;
-        }
-
-        startActivity(intent);
-        return super.onOptionsItemSelected(item);
+        startActivity(getSelectedItemIntent(this, item.getItemId()));
+        return true;
     }
 }
